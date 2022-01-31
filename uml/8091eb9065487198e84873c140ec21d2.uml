@@ -1,0 +1,163 @@
+@startuml
+
+
+@startwbs wbs_gdw_integration
+' skinparam Monochrome reverse
+skinparam HorizontalAlignment left
+skinparam Padding 3
+skinparam WrapWidth 20
+
+!include https://gist.githubusercontent.com/kryochronic/2f2fa8bd421e4729fb90e8685afcc90c/raw/5a0433838d4ea103b303439797e09c43e0cda814/wbs-styles.puml
+!$ICO_DONE = "<&check{scale=2}>"
+!$ICO_UP = "<&aperture{scale=2}>"
+!$ICO_TODO = "<&flag{scale=2}>"
+!$ICO_BT = "<&bluetooth{scale=2}>"
+!$ICO_PERSON = "<&person{scale=1}>"
+!$ICO_GRP = "<&people{scale=1}>"
+
+!$STYLE_TB_HDR = "<#lightblue,#blue>"
+!$STYLE_TB_ROW = "<#yellow,#blue>"
+
+!$STATUS_DONE = "[#LightGreen]"
+!$STATUS_UP = "[#LightBlue]"
+!$STATUS_TODO = "[#LightGrey]"
+
+!$N_JA = "<&person{scale=1.5}> **SomeName 00**"
+!$N_HC = "<&person{scale=1.5}> **SomeName 01**"
+!$N_DK = "<&person{scale=1.5}> **SomeName 02**"
+!$N_MG = "<&person{scale=1.5}> **SomeName 03**"
+!$N_SJ = "<&person{scale=1.5}> **SomeName 04**"
+!$N_KFinsson = "<&person{scale=1.5}> **SomeName 05**"
+!$N_PM = "<&person{scale=1.5}> **SomeName 06**"
+!$N_AT = "<&person{scale=1.5}> **SomeName 07**"
+!$N_AM = "<&person{scale=1.5}> **SomeName 08**"
+!$N_KC = "<&person{scale=1.5}> **SomeName 09**"
+!$N_NS = "<&person{scale=1.5}> **SomeName 10**"
+!$N_RB = "<&person{scale=1.5}> **SomeName 11**"
+!$N_KF = "<&person{scale=1.5}> **SomeName 12**"
+!$N_JB = "<&person{scale=1.5}> **SomeName 13**"
+!$N_PS = "<&person{scale=1.5}> **SomeName 14**"
+!$N_MM = "<&person{scale=1.5}> **SomeName 15**"
+!$N_GS = "<&person{scale=1.5}> **SomeName 16**"
+
+Legend
+----
+== Note
+$STYLE_TB_HDR|=#|=Icon|=Description|= Remarks|
+$STYLE_TB_ROW|1|$ICO_DONE|Task Done||
+$STYLE_TB_ROW|1|$ICO_UP|Task In Progress||
+$STYLE_TB_ROW|1|$ICO_TODO|Task TODO||
+----
+**(C) 2021 XYZ Web Company Inc.**
+----
+end Legend
+' ********************** Separator **********************
+title
+Sprint Goals - 53
+end title
+* Sprint 53
+** XXXX \n$N_RB/\n$N_NS - \n$N_MM\n$N_DK  
+*** $ICO_DONE Test Coverage Analysis \n$N_GS\n$N_SJ\n$N_AT
+***  Support \n$N_MM\n$N_DK  
+*** $ICO_DONE Regression Testing  
+*** Regression Testing with XXXX 
+*** Support For  XXXX dependency 
+*** XXXX  \n$N_RB
+
+** XXXX Corrections \n$N_RB, \n$N_NS, \n$N_AT
+*** XXXX Parsing \n$N_PS
+**** Implementation/Itegration\n$N_PS
+*** XXXX Qualifier \n$N_AT\n$N_RB
+**** $ICO_DONE Implementation\n$N_PS   
+**** $ICO_DONE Review \n$N_RB   
+*** XXXX Post Processor \n$N_PS   
+**** $ICO_DONE Implementation/Itegration\n$N_PS   
+**** $ICO_DONE Review \n$N_RB   
+*** XXXX Notifications Subscription \n$N_DK 
+**** Implementation/Itegration\n$N_DK   
+**** Review \n$N_RB
+*** XXXX Post Process Monitoring \n$N_PS
+**** Implementation/Itegration\n$N_PS
+**** Review \n$N_RB
+*** Release to QA
+**** APIM Integrate
+ 
+
+** XXXX2 3 Way Integration \n$N_JA
+*** XXXX233 Integration $N_JA $N_HC
+**** XXXX23 (Resolve   deployment issues)
+**** XXXX2334 genration dependencies 
+
+
+** XXXX2 Refinement\n$N_JA
+*** Code Template\n$N_NS\n$N_RB\n$N_AT
+**** Data Model
+**** API Request/Response
+**** DB Schema
+*** Implementation
+*** Release WBS (Planning)\n$N_RB\n$N_NS\n$N_AT
+
+
+** XXM PUTTY Services\n$N_AT\n$N_NS
+*** $ICO_DONE UI Mockup Part 3\n$N_MM\n$N_NS   
+*** $ICO_DONE R&D JSONAPI
+*** $ICO_DONE DataModels    
+*** DB Schema\n$N_RB\n$N_NS 
+*** APIRequest/Response Models\n$N_RB\n$N_NS
+*** Design\n$N_NS
+*** R&D InfraStructure strategy
+*** RnD Subscription Support/APIs Support\n$N_NS
+*** Implemenatation
+**** SPA Implementation\n$N_MM
+**** PUTTY backend \n$N_NS 
+
+
+** Kuda Karkat PoC \n$N_NS
+*** $ICO_DONE XXXX Kuda Karkat Implementation  
+*** Evaluation of alternate for Kuda Karkat storage mechanism
+*** Leveraging OK
+*** Leverage Koten For Retrieval
+*** $ICO_DONE DataPsuedonymization In Kuda Karkat 
+
+** PoC for Kuda Karkats (PUTTY)\n$N_NS\n$N_MM
+*** Kuda Karkat Styling
+*** Kuda Karkat Integration 
+*** Kuda Karkat Plotting\Tracking 
+
+** XXXX Log Merge \n$N_RB, \n$N_NS, \n$N_AT
+*** Data Log Merging \n$N_RB
+**** Requirement Analysis \n$N_RB
+**** XXM Impact (Kuda Karkat dependency) \n$N_RB
+**** XXXX Impact Analysis \n$N_RB
+**** Data Models \n$N_RB
+**** Design \n$N_RB
+*** Kuda Karkat
+*** Kuda Karkat Subscriptions
+*** XXM XXXX for XXXX2(v0.3) & subscriptions 
+*** Backlog
+*** XXXX::Kuda Karkat and Comments
+**** Kuda Karkat feedback incorporation
+**** Archive Kuda Karkat feedback incorporation
+  
+ 
+** Kuda Karkat proxy for Kuda Karkat Integration \n$N_NS\n$N_HC 
+*** Kuda Karkat proxy\nSession ID Mgmt - Pending work\n$N_HC 
+*** Kuda Karkat proxy\nIntegrate Local - Pending work\n$N_HC 
+*** Kuda Karkat proxy\nIntegrate Dev - Pending work\n$N_HC 
+*** Kuda Karkat proxy\nIntegrate Test - Pending work\n$N_HC 
+*** Kuda Karkat proxy\nMultiple Client Test - Pending work\n$N_HC 
+
+** XXM 2.0 
+*** Kuda Karkat \n$N_AT
+**** Kuda Karkat Demo\n$N_RB\n$N_MM
+**** Kuda Karkat Demo Input incorporation \n$N_RB\n$N_MM
+ 
+
+** POC for Karkat Kuda\n$N_MM
+*** XXM Integration with Kuda Karkat\n$N_MM
+*** Deployment of new Kuda Karkat angular app (automating strategy)\n$N_MM
+*** Decoupling angular-Kuda Karkat from asp.net-Kuda Karkat\n$N_MM
+*** Current Kuda Karkat deployment & test\nhow new SPA code will be working in production\n$N_MM
+
+
+@enduml

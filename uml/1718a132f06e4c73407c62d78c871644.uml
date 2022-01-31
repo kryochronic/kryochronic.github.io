@@ -1,0 +1,7 @@
+@startuml
+
+@startuml
+!include ../puml_src/test_wbs.puml
+@enduml
+
+@enduml

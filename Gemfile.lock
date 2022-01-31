@@ -106,6 +106,7 @@ GEM
     html-pipeline (2.14.0)
       activesupport (>= 2)
       nokogiri (>= 1.4)
+    htmlentities (4.3.4)
     http_parser.rb (0.8.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
@@ -221,6 +222,11 @@ GEM
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
+    kramdown-plantuml (1.3.2)
+      htmlentities (~> 4)
+      kramdown (~> 2.3)
+      kramdown-parser-gfm (~> 1.1)
+      open3 (~> 0.1)
     liquid (4.0.3)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -237,10 +243,12 @@ GEM
     octokit (4.22.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
+    open3 (0.1.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
     racc (1.6.0)
+    rake (13.0.6)
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -284,7 +292,9 @@ PLATFORMS
 DEPENDENCIES
   github-pages (~> 223)
   jekyll-feed (~> 0.12)
+  kramdown-plantuml
   minima (~> 2.5)
+  rake
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)

@@ -1,0 +1,5 @@
+@startuml
+
+!include https://gist.githubusercontent.com/kryochronic/87a23d3bbe29a9d245ea0fffd7747c11/raw/adb73b2b16b109724437e685fff65a629962181c/wbs_example.puml
+
+@enduml
