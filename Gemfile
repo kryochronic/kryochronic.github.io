@@ -12,8 +12,8 @@ source "https://rubygems.org"
 # Broken by default on win 11, need to install the following:
 gem "webrick"
 # Also trying plant uml support for jekyll +markdown
-# gem 'asciidoctor', '~> 1.5'
-# gem 'jekyll-plantuml', '~> 1.1' 
+gem 'asciidoctor', '~> 1.5'
+gem 'jekyll-plantuml', '~> 1.1' 
 gem 'kramdown-plantuml'
 gem 'rake'
 
@@ -21,12 +21,13 @@ gem 'rake'
 gem "minima", "~> 2.5"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
-gem "github-pages", "~> 223", group: :jekyll_plugins
+gem "github-pages", "~> 228", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
+  gem "liquid", "= 4.0.4"
   # gem 'asciidoctor-diagram' 
-  gem 'kramdown-plantuml'
+  # gem 'kramdown-plantuml'
 # gem 'jekyll-plantuml', '~> 1.1' 
 end
 
